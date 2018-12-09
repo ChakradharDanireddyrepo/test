@@ -1,0 +1,660 @@
+<?xml version='1.0' ?>
+<!DOCTYPE notify SYSTEM "file://d:\paymentService_v1.dtd">
+<notify messageType="TransferReport">
+	<orderStatusEvent orderCode="" backOfficeCode="" agreementId="" shoppingBasketCode="">
+		<payment>
+			<localDateTimeAtPOS>
+				<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+			</localDateTimeAtPOS>
+			<paymentMethod/>
+			<paymentMethodDetail>
+				<card number="" hash="" type="creditcard" code="">
+					<issueNumber/>
+					<expiryDate>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</expiryDate>
+					<family/>
+				</card>
+			</paymentMethodDetail>
+			<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+			<lastEvent/>
+			<refundReference/>
+			<reference id=""/>
+			<thirdPartyReference/>
+			<AuthorisationId id="" by=""/>
+			<AgentFeeAuthorisationId id=""/>
+			<ISO8583ReturnCode code="" description=""/>
+			<IssuerResponseCode code="" description=""/>
+			<CVCResultCode description=""/>
+			<AVSResultCode description=""/>
+			<AAVAddressResultCode description=""/>
+			<AAVPostcodeResultCode description=""/>
+			<AAVCardholderNameResultCode description=""/>
+			<AAVTelephoneResultCode description=""/>
+			<AAVEmailResultCode description=""/>
+			<ThreeDSecureResult description="">
+				<eci/>
+				<cavv/>
+			</ThreeDSecureResult>
+			<cardHolderName/>
+			<issuerCountryCode/>
+			<issuerName/>
+			<POSResponse>
+				<ISO8583Response>
+					<authorisationResponseCode/>
+					<EMVResponse>
+						<authenticationData>
+							<ARPC/>
+						</authenticationData>
+						<script/>
+					</EMVResponse>
+					<transactionResponder/>
+				</ISO8583Response>
+				<balanceReturn>
+					<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+				</balanceReturn>
+			</POSResponse>
+			<balance accountType="">
+				<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+			</balance>
+			<cardNumber/>
+			<hashedCardNumber/>
+			<riskScore value="" provider="" id="" finalScore="" RGID="" tScore="" tRisk="" message="" extendedResponse=""/>
+			<ACHOrderId/>
+			<checkpointSummary/>
+			<fraudShieldIndicators/>
+			<newRoutingNumber/>
+			<newAccountNumber/>
+			<newBankAccountType/>
+			<shippingAddress>
+				<address>
+					<firstName/>
+					<lastName/>
+					<street/>
+					<houseName/>
+					<houseNumber/>
+					<houseNumberExtension/>
+					<address1/>
+					<address2/>
+					<address3/>
+					<postalCode/>
+					<city/>
+					<state/>
+					<countryCode/>
+					<telephoneNumber/>
+				</address>
+			</shippingAddress>
+			<shopperEmailAddress/>
+			<zappPayConnect setCookie="N">
+				<cookieId/>
+				<cookieExpiryDays/>
+			</zappPayConnect>
+			<instalments/>
+			<acquirerReturnDescription/>
+			<localAcquirer/>
+			<receipts>
+				<receipt type="TICKET">
+					<acquirerData/>
+				</receipt>
+			</receipts>
+			<ISO20022TransactionReasonCode code="" description=""/>
+			<subPaymentMethod/>
+			<apmEnrichedData>
+				<parameter key=""/>
+			</apmEnrichedData>
+			<schemeResponse>
+				<schemeName/>
+				<actionCode/>
+				<responseCode/>
+				<transactionIdentifier/>
+			</schemeResponse>
+			<dateTime>
+				<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+			</dateTime>
+			<fastFunds/>
+			<accountUpdater>
+				<originalCard>
+					<cardDetails>
+						<cardNumber/>
+						<expiryDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</expiryDate>
+						<cardHolderName/>
+						<cvc/>
+						<cardAddress>
+							<address>
+								<firstName/>
+								<lastName/>
+								<street/>
+								<houseName/>
+								<houseNumber/>
+								<houseNumberExtension/>
+								<address1/>
+								<address2/>
+								<address3/>
+								<postalCode/>
+								<city/>
+								<state/>
+								<countryCode/>
+								<telephoneNumber/>
+							</address>
+						</cardAddress>
+						<derived>
+							<cardBrand/>
+							<cardSubBrand/>
+							<cardCoBrand/>
+							<issuerCountryCode/>
+							<obfuscatedPAN/>
+						</derived>
+						<encryptedPAN/>
+					</cardDetails>
+				</originalCard>
+				<newCard>
+					<cardDetails>
+						<cardNumber/>
+						<expiryDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</expiryDate>
+						<cardHolderName/>
+						<cvc/>
+						<cardAddress>
+							<address>
+								<firstName/>
+								<lastName/>
+								<street/>
+								<houseName/>
+								<houseNumber/>
+								<houseNumberExtension/>
+								<address1/>
+								<address2/>
+								<address3/>
+								<postalCode/>
+								<city/>
+								<state/>
+								<countryCode/>
+								<telephoneNumber/>
+							</address>
+						</cardAddress>
+						<derived>
+							<cardBrand/>
+							<cardSubBrand/>
+							<cardCoBrand/>
+							<issuerCountryCode/>
+							<obfuscatedPAN/>
+						</derived>
+						<encryptedPAN/>
+					</cardDetails>
+				</newCard>
+				<updaterResponse>
+					<updaterCode/>
+					<updaterMessage/>
+				</updaterResponse>
+			</accountUpdater>
+		</payment>
+		<paymentAdditionalDetails>
+			<shopperId/>
+			<firstName/>
+			<lastName/>
+			<shopperEmailAddress/>
+			<shopperCountryCode/>
+			<shopperStatus/>
+			<shippingAddressDetails>
+				<addressStatus/>
+				<addressSource/>
+				<name/>
+				<street/>
+				<postalCode/>
+				<city/>
+				<state/>
+				<countryCode/>
+			</shippingAddressDetails>
+		</paymentAdditionalDetails>
+		<billingAddressDetails>
+			<addressStatus/>
+			<addressSource/>
+			<name/>
+			<street/>
+			<postalCode/>
+			<city/>
+			<state/>
+			<countryCode/>
+		</billingAddressDetails>
+		<token>
+			<authenticatedShopperID/>
+			<tokenEventReference/>
+			<tokenReason/>
+			<tokenDetails tokenEvent="NEW">
+				<paymentTokenID/>
+				<paymentTokenExpiry>
+					<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+				</paymentTokenExpiry>
+				<reportingTokenID/>
+				<reportingTokenExpiry>
+					<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+				</reportingTokenExpiry>
+				<tokenEventReference/>
+				<tokenReason/>
+			</tokenDetails>
+			<paymentInstrument>
+				<cardDetails>
+					<cardNumber/>
+					<expiryDate>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</expiryDate>
+					<cardHolderName/>
+					<cvc/>
+					<cardAddress>
+						<address>
+							<firstName/>
+							<lastName/>
+							<street/>
+							<houseName/>
+							<houseNumber/>
+							<houseNumberExtension/>
+							<address1/>
+							<address2/>
+							<address3/>
+							<postalCode/>
+							<city/>
+							<state/>
+							<countryCode/>
+							<telephoneNumber/>
+						</address>
+					</cardAddress>
+					<derived>
+						<cardBrand/>
+						<cardSubBrand/>
+						<cardCoBrand/>
+						<issuerCountryCode/>
+						<obfuscatedPAN/>
+					</derived>
+					<encryptedPAN/>
+				</cardDetails>
+				<paypal/>
+				<sepa>
+					<mandateId/>
+					<iban/>
+					<shopperEmailAddress/>
+					<accountHolderName/>
+					<mandateSignatureDate>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</mandateSignatureDate>
+				</sepa>
+				<emvcoTokenDetails>
+					<tokenNumber/>
+					<type/>
+					<expiryDate>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</expiryDate>
+					<cardHolderName/>
+				</emvcoTokenDetails>
+			</paymentInstrument>
+			<error code="1"/>
+		</token>
+		<journal journalType="" journalId="" description="" note="" sent="y">
+			<bookingDate>
+				<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+			</bookingDate>
+			<accountTx accountType="AUTHORISED" batchId="">
+				<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+			</accountTx>
+			<journalReference type="" reference=""/>
+			<JournalTypeDetail>
+				<JournalTypeDetailId/>
+				<Description/>
+				<ReversalReason/>
+			</JournalTypeDetail>
+		</journal>
+		<shopperWebformRefundDetails>
+			<webformId/>
+			<paymentId/>
+			<webformStatus/>
+			<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+			<reason/>
+			<webformURL/>
+			<refundId/>
+		</shopperWebformRefundDetails>
+	</orderStatusEvent>
+	<report reportType="order" batchId="" settlementCurrency="" accountType="" acquirerCode="" acquirerAccountCode="" brandId="">
+		<lastDate>
+			<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+		</lastDate>
+		<creationDate>
+			<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+		</creationDate>
+		<fromDate>
+			<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+		</fromDate>
+		<untilDate>
+			<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+		</untilDate>
+		<orderStatusEvent orderCode="" backOfficeCode="" agreementId="" shoppingBasketCode="">
+			<payment>
+				<localDateTimeAtPOS>
+					<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+				</localDateTimeAtPOS>
+				<paymentMethod/>
+				<paymentMethodDetail>
+					<card number="" hash="" type="creditcard" code="">
+						<issueNumber/>
+						<expiryDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</expiryDate>
+						<family/>
+					</card>
+				</paymentMethodDetail>
+				<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+				<lastEvent/>
+				<refundReference/>
+				<reference id=""/>
+				<thirdPartyReference/>
+				<AuthorisationId id="" by=""/>
+				<AgentFeeAuthorisationId id=""/>
+				<ISO8583ReturnCode code="" description=""/>
+				<IssuerResponseCode code="" description=""/>
+				<CVCResultCode description=""/>
+				<AVSResultCode description=""/>
+				<AAVAddressResultCode description=""/>
+				<AAVPostcodeResultCode description=""/>
+				<AAVCardholderNameResultCode description=""/>
+				<AAVTelephoneResultCode description=""/>
+				<AAVEmailResultCode description=""/>
+				<ThreeDSecureResult description="">
+					<eci/>
+					<cavv/>
+				</ThreeDSecureResult>
+				<cardHolderName/>
+				<issuerCountryCode/>
+				<issuerName/>
+				<POSResponse>
+					<ISO8583Response>
+						<authorisationResponseCode/>
+						<EMVResponse>
+							<authenticationData>
+								<ARPC/>
+							</authenticationData>
+							<script/>
+						</EMVResponse>
+						<transactionResponder/>
+					</ISO8583Response>
+					<balanceReturn>
+						<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+					</balanceReturn>
+				</POSResponse>
+				<balance accountType="">
+					<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+				</balance>
+				<cardNumber/>
+				<hashedCardNumber/>
+				<riskScore value="" provider="" id="" finalScore="" RGID="" tScore="" tRisk="" message="" extendedResponse=""/>
+				<ACHOrderId/>
+				<checkpointSummary/>
+				<fraudShieldIndicators/>
+				<newRoutingNumber/>
+				<newAccountNumber/>
+				<newBankAccountType/>
+				<shippingAddress>
+					<address>
+						<firstName/>
+						<lastName/>
+						<street/>
+						<houseName/>
+						<houseNumber/>
+						<houseNumberExtension/>
+						<address1/>
+						<address2/>
+						<address3/>
+						<postalCode/>
+						<city/>
+						<state/>
+						<countryCode/>
+						<telephoneNumber/>
+					</address>
+				</shippingAddress>
+				<shopperEmailAddress/>
+				<zappPayConnect setCookie="N">
+					<cookieId/>
+					<cookieExpiryDays/>
+				</zappPayConnect>
+				<instalments/>
+				<acquirerReturnDescription/>
+				<localAcquirer/>
+				<receipts>
+					<receipt type="TICKET">
+						<acquirerData/>
+					</receipt>
+				</receipts>
+				<ISO20022TransactionReasonCode code="" description=""/>
+				<subPaymentMethod/>
+				<apmEnrichedData>
+					<parameter key=""/>
+				</apmEnrichedData>
+				<schemeResponse>
+					<schemeName/>
+					<actionCode/>
+					<responseCode/>
+					<transactionIdentifier/>
+				</schemeResponse>
+				<dateTime>
+					<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+				</dateTime>
+				<fastFunds/>
+				<accountUpdater>
+					<originalCard>
+						<cardDetails>
+							<cardNumber/>
+							<expiryDate>
+								<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+							</expiryDate>
+							<cardHolderName/>
+							<cvc/>
+							<cardAddress>
+								<address>
+									<firstName/>
+									<lastName/>
+									<street/>
+									<houseName/>
+									<houseNumber/>
+									<houseNumberExtension/>
+									<address1/>
+									<address2/>
+									<address3/>
+									<postalCode/>
+									<city/>
+									<state/>
+									<countryCode/>
+									<telephoneNumber/>
+								</address>
+							</cardAddress>
+							<derived>
+								<cardBrand/>
+								<cardSubBrand/>
+								<cardCoBrand/>
+								<issuerCountryCode/>
+								<obfuscatedPAN/>
+							</derived>
+							<encryptedPAN/>
+						</cardDetails>
+					</originalCard>
+					<newCard>
+						<cardDetails>
+							<cardNumber/>
+							<expiryDate>
+								<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+							</expiryDate>
+							<cardHolderName/>
+							<cvc/>
+							<cardAddress>
+								<address>
+									<firstName/>
+									<lastName/>
+									<street/>
+									<houseName/>
+									<houseNumber/>
+									<houseNumberExtension/>
+									<address1/>
+									<address2/>
+									<address3/>
+									<postalCode/>
+									<city/>
+									<state/>
+									<countryCode/>
+									<telephoneNumber/>
+								</address>
+							</cardAddress>
+							<derived>
+								<cardBrand/>
+								<cardSubBrand/>
+								<cardCoBrand/>
+								<issuerCountryCode/>
+								<obfuscatedPAN/>
+							</derived>
+							<encryptedPAN/>
+						</cardDetails>
+					</newCard>
+					<updaterResponse>
+						<updaterCode/>
+						<updaterMessage/>
+					</updaterResponse>
+				</accountUpdater>
+			</payment>
+			<paymentAdditionalDetails>
+				<shopperId/>
+				<firstName/>
+				<lastName/>
+				<shopperEmailAddress/>
+				<shopperCountryCode/>
+				<shopperStatus/>
+				<shippingAddressDetails>
+					<addressStatus/>
+					<addressSource/>
+					<name/>
+					<street/>
+					<postalCode/>
+					<city/>
+					<state/>
+					<countryCode/>
+				</shippingAddressDetails>
+			</paymentAdditionalDetails>
+			<billingAddressDetails>
+				<addressStatus/>
+				<addressSource/>
+				<name/>
+				<street/>
+				<postalCode/>
+				<city/>
+				<state/>
+				<countryCode/>
+			</billingAddressDetails>
+			<token>
+				<authenticatedShopperID/>
+				<tokenEventReference/>
+				<tokenReason/>
+				<tokenDetails tokenEvent="NEW">
+					<paymentTokenID/>
+					<paymentTokenExpiry>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</paymentTokenExpiry>
+					<reportingTokenID/>
+					<reportingTokenExpiry>
+						<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+					</reportingTokenExpiry>
+					<tokenEventReference/>
+					<tokenReason/>
+				</tokenDetails>
+				<paymentInstrument>
+					<cardDetails>
+						<cardNumber/>
+						<expiryDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</expiryDate>
+						<cardHolderName/>
+						<cvc/>
+						<cardAddress>
+							<address>
+								<firstName/>
+								<lastName/>
+								<street/>
+								<houseName/>
+								<houseNumber/>
+								<houseNumberExtension/>
+								<address1/>
+								<address2/>
+								<address3/>
+								<postalCode/>
+								<city/>
+								<state/>
+								<countryCode/>
+								<telephoneNumber/>
+							</address>
+						</cardAddress>
+						<derived>
+							<cardBrand/>
+							<cardSubBrand/>
+							<cardCoBrand/>
+							<issuerCountryCode/>
+							<obfuscatedPAN/>
+						</derived>
+						<encryptedPAN/>
+					</cardDetails>
+					<paypal/>
+					<sepa>
+						<mandateId/>
+						<iban/>
+						<shopperEmailAddress/>
+						<accountHolderName/>
+						<mandateSignatureDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</mandateSignatureDate>
+					</sepa>
+					<emvcoTokenDetails>
+						<tokenNumber/>
+						<type/>
+						<expiryDate>
+							<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+						</expiryDate>
+						<cardHolderName/>
+					</emvcoTokenDetails>
+				</paymentInstrument>
+				<error code="1"/>
+			</token>
+			<journal journalType="" journalId="" description="" note="" sent="y">
+				<bookingDate>
+					<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+				</bookingDate>
+				<accountTx accountType="AUTHORISED" batchId="">
+					<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+				</accountTx>
+				<journalReference type="" reference=""/>
+				<JournalTypeDetail>
+					<JournalTypeDetailId/>
+					<Description/>
+					<ReversalReason/>
+				</JournalTypeDetail>
+			</journal>
+			<shopperWebformRefundDetails>
+				<webformId/>
+				<paymentId/>
+				<webformStatus/>
+				<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+				<reason/>
+				<webformURL/>
+				<refundId/>
+			</shopperWebformRefundDetails>
+		</orderStatusEvent>
+		<journal journalType="" journalId="" description="" note="" sent="y">
+			<bookingDate>
+				<date dayOfMonth="" month="" year="" hour="" minute="" second=""/>
+			</bookingDate>
+			<accountTx accountType="AUTHORISED" batchId="">
+				<amount value="" currencyCode="" exponent="0" debitCreditIndicator="debit"/>
+			</accountTx>
+			<journalReference type="" reference=""/>
+			<JournalTypeDetail>
+				<JournalTypeDetailId/>
+				<Description/>
+				<ReversalReason/>
+			</JournalTypeDetail>
+		</journal>
+	</report>
+</notify>
